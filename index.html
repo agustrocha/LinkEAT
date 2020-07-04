@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LinkEAT</title>
+    <script src="https://kit.fontawesome.com/bbdd9abb74.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="principal">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">LinkEAT</a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#eatery">Eatery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#join">Join us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#inner">Inner zone</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="jumbotron jumbotron-fluid height100p banner" id="home">
+            <div class="container h100">
+                <div class="contentBox h100">
+                    <div>
+                        <h1>Live. Eat. Share.</h1>
+                        <p id="subtitle">Check the latest news from your favorite restaurant menu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" sub-menu row">
+            <div class="restaurant col-md-4 col-12 mb-2 mb-md-1 mt-2"></div>
+            <div class="publicidad col-md order-md-12 mb-2 mb-md-1 mt-md-2"></div>
+            <div class="menus col-md-4 col-12 order-md-1 mb-2 mb-md-1 mt-md-2 mx-md-2"></div>
+        </div>
+    </div>
+    <section class="sec2" id="eatery">
+        <div class="container h100">
+            <div class="contentBox2 h100">
+                <div>
+                    <h2>Your food is near</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veniam nesciunt ducimus
+                        reiciendis officia hic, laborum accusamus laudantium inventore harum et fugit dolorum
+                        obcaecati voluptas aperiam exercitationem sed ea fuga!</p>
+
+                    <a href="#" role="button" class="btn btn-light">See more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="creacionMenu contentBox3 row">
+        <div class="creacion">
+            <h2>Be brave. Be creative.</h2>
+        </div>
+    </div>
+    <section class="join" id="join">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="headerText text-center">
+                        <h2>Be our guest</h2>
+                        <p>Join the most demanded restaurant network in the world. Take the step.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-sm-2 col-sm-8">
+                    <form id="contactUs" action='POST'>
+                        <div class="form-horizontal row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" name="name" class="form-control" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" name="mail" class="form-control" id="mail">
+                                </div>
+                                <div class="form-group">
+                                    <label>Phone</label>
+                                    <input type="text" name="phone" class="form-control" id="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label>Restaurant Name</label>
+                                    <input type="text" name="rName" class="form-control" id="restaurantN">
+                                </div>
+                                <div class="form-group">
+                                    <label>Restaurant Direction</label>
+                                    <input type="text" name="rDirection" class="form-control" id="rDir">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Allergens</label>
+                                    <textarea name="aller" class="form-control textarea" id="aller" cols="30"
+                                        rows="5"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Kind of food</label>
+                                    <select class="custom-select mr-sm-2" id="kindF">
+                                        <option selected>Choose...</option>
+                                        <option value="1">Chinese</option>
+                                        <option value="2">Italian</option>
+                                        <option value="3">Spanish</option>
+                                    </select>
+                                </div>
+                                <label>Planing and Pricing</label>
+                                <div class="form-group form-check-inline">
+                                    <label>
+                                        <input type="checkbox" name="standard">
+                                        <img src="imagenes/Plan1.jpg" alt="plan1">
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="premium">
+                                        <img src="imagenes/Plan2.jpg" alt="plan2">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-light" data-toggle="modal" data-target="#sendMessage">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container h100">
+            <div class="contentBox2 h100">
+                <div>
+                    <h2>Meet our crew</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec4" id="inner">
+        <div class="formCentered container h100 offset-sm-2 col-sm-8">
+            <div class="form-horizontal row">
+                <div class="form-group col-md-6 col-12">
+                    <input type="text" name="loginName" class="form-control" id="logName" placeholder="Username">
+                </div>
+                <div class="form-group col-md-6 col-12">
+                    <input type="password" name="loginPass" class="form-control" id="logPass" placeholder="Password">
+                </div>
+                <div class="form-group col">
+                    <button class="btn btn-light" type="submit" id="log" name="log">Log in</button>
+                </div>
+            </div>
+        </div>
+        <div class="endText">
+            <div>
+                <h2>For our Elite</h2>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="sci">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                    <p class="cright">© Copyright 2020 by LinkEAT</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
